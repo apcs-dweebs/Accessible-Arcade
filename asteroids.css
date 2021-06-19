@@ -34,10 +34,6 @@ body {
     position: relative;
 }
 
-.div{
-background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
-}
-
 .overlay {
     position: absolute;
     min-height: 100%;
@@ -60,7 +56,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
     color: #cc0e3e;
 }
 
-.description p {
+.description h6 {
     color: #fff;
     font-size: 1.3rem;
     line-height: 1.5;

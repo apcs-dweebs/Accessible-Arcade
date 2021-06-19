@@ -22,17 +22,12 @@ puzzle
   *add how to play
   
 zen
-  *compile slideshow
   *code button to display pictures
   *add how to use
 
 design
   *logo
-  *header fonts
-  *reserach fonts
-  *backgrounds, etc
 
 misc
   *footer
   *background overlay on body
-  *
