@@ -13,6 +13,7 @@ body {
     color: #ebb905;
     cursor: pointer;
     font-weight: bold;
+    font-family: monospace;
 }
 
 .nav-link {
@@ -61,7 +62,7 @@ body {
 
 .description h5 {
     color: #cc0e3e;
-    font-family: 
+    font-family: monospace;
     font-size: 1.3rem;
     line-height: 1.5;
 }
@@ -153,6 +154,7 @@ body {
 /**/
     background-color: #cc0e3e;
     color: #fff;
+    font-family: monospace;
     padding: 60px 0 30px;
 }
 

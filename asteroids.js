@@ -111,6 +111,15 @@
             return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         }
 
+        function soundx(){
+          for(let i = 0; i < roids.length;i++){
+        if(distBetweenPoints(ship.x,ship.y,roids[i].x,roids[i].y) == 3 ){
+       var audio = new Audio('https://drive.google.com/file/d/1aMDrzNg4ObQlwvYiG8jMAOKMh9sDewQY/view?usp=sharing');
+        audio.play();
+        }
+          }
+        }
+
         function drawShip(x, y, a, colour = "white") {
             ctx.strokeStyle = colour;
             ctx.lineWidth = SHIP_SIZE / 20;
