@@ -34,9 +34,6 @@ body {
     position: relative;
 }
 
-.div{
-background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
-}
 
 .overlay {
     position: absolute;
@@ -58,15 +55,17 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 
 .description h1 {
     color: #cc0e3e;
+    font-size: 50px;
+    font-family: "Allerta Stencil";
 }
 
-.description p {
+.description h6 {
     color: #fff;
     font-size: 1.3rem;
     line-height: 1.5;
 }
 
-.description button {
+/*.description button {
     border:1px solid #cc0e3e;
     background:#cc0e3e;
     border-radius: 0;
@@ -76,20 +75,23 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 .description button:hover {
     border:1px solid #fff;
     background:#fff;
-    color:#000;
+    color:#fff;
 }
+*/
 
 .features {
     margin: 4em auto;
     padding: 1em;
     position: relative;
-    color: #fff
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 .feature-title {
     color: #fff;
-    font-family:
-    font-size: 1.3rem;
+    font-family:"Allerta Stencil";
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -182,7 +184,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
     }
 
 }
-
+/* a modal, we're not using rn
 #demo-modal .modal-content {
     border-radius: 0;
     padding: 2rem;
@@ -241,7 +243,9 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 #demo-modal .btn:focus {
     background-color: #12968d;
 }
+*/
 
+/* a video player, we're not using rn
 .iframe-container{
 position: relative;
 width: 100%;
@@ -256,3 +260,4 @@ left:0;
 width:100%;
 height:100%;
 }
+*/
