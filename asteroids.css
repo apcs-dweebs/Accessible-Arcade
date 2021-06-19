@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
+  /*  background: #f2f6e9;*/
 }
 
 .navbar {
@@ -34,9 +35,6 @@ body {
     position: relative;
 }
 
-.div{
-background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
-}
 
 .overlay {
     position: absolute;
@@ -83,12 +81,10 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
     margin: 4em auto;
     padding: 1em;
     position: relative;
-    color: #fff
 }
 
 .feature-title {
-    color: #fff;
-    font-family:
+    color: #333;
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -125,7 +121,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 .team {
-    color: #fff;
+    color: #5e5e55;
     padding: 0 180px;
 }
 
@@ -147,9 +143,8 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 .page-footer {
-/**/
     background-color: #cc0e3e;
-    color: #fff;
+    color: #ccc;
     padding: 60px 0 30px;
 }
 
@@ -222,7 +217,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 #demo-modal .modal-body p {
-    color: #fff;
+    color: #999;
 }
 
 #demo-modal .form-control,
