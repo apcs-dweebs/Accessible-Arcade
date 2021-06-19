@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f2f6e9;
+    background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
 }
 
 .navbar {
@@ -83,10 +83,11 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
     margin: 4em auto;
     padding: 1em;
     position: relative;
+    color: #fff
 }
 
 .feature-title {
-    color: #333;
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -123,7 +124,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 .team {
-    color: #5e5e55;
+    color: #fff;
     padding: 0 180px;
 }
 
@@ -145,9 +146,9 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 .page-footer {
-background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
-    background-color: #222;
-    color: #ccc;
+/**/
+    background-color: #cc0e3e;
+    color: #fff;
     padding: 60px 0 30px;
 }
 
@@ -220,7 +221,7 @@ background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a18
 }
 
 #demo-modal .modal-body p {
-    color: #999;
+    color: #fff;
 }
 
 #demo-modal .form-control,
