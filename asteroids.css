@@ -34,6 +34,9 @@ body {
     position: relative;
 }
 
+.div{
+background-image: url(https://i.pinimg.com/originals/d2/b8/7e/d2b87e657436577a186a8e1806ab6764.jpg);
+}
 
 .overlay {
     position: absolute;
@@ -55,17 +58,15 @@ body {
 
 .description h1 {
     color: #cc0e3e;
-    font-size: 50px;
-    font-family: "Allerta Stencil";
 }
 
-.description h6 {
+.description p {
     color: #fff;
     font-size: 1.3rem;
     line-height: 1.5;
 }
 
-/*.description button {
+.description button {
     border:1px solid #cc0e3e;
     background:#cc0e3e;
     border-radius: 0;
@@ -75,22 +76,21 @@ body {
 .description button:hover {
     border:1px solid #fff;
     background:#fff;
-    color:#fff;
+    color:#000;
 }
-*/
 
 .features {
     margin: 4em auto;
     padding: 1em;
     position: relative;
     color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:fantasy;
     
 }
 
 .feature-title {
     color: #fff;
-    font-family:"Allerta Stencil";
+    font-family:fantasy;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
