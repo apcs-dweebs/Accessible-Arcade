@@ -13,6 +13,7 @@ var audio = new Audio("asteroid coming close.mp3");
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="shortcut icon" href="aa-favicon.ico">
 </head>
 
 <body>
@@ -31,11 +32,11 @@ var audio = new Audio("asteroid coming close.mp3");
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="asteroids.html">Asteroids</a>
+			 <li class="nav-item">
+                <a class="nav-link" href="puzzle.html">Puzzle</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="puzzle.html">Puzzle</a>
+                <a class="nav-link" href="asteroids.html">Asteroids</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="snake.html">Snake</a>
@@ -53,7 +54,7 @@ var audio = new Audio("asteroid coming close.mp3");
     <div class="description">
         <img src="https://cdn.discordapp.com/attachments/825412073063448599/855896050439159818/unknown-removebg-preview_1.png"
              height="150" width="650"/>
-
+<h5><strong>Games for those who are visually impaired, colorblind, or have anxiety!<br>This project was created for High Tech Hacks 2021.</strong></h5>
     </div>
 </header>
 
@@ -72,11 +73,12 @@ var audio = new Audio("asteroid coming close.mp3");
             <h3 class="feature-title">How to Play</h3>
             <h4>
                 <ol>
-                    <li>press right to turn the noes of the ship right</li>
-                    <li>press left to turn the nose of the ship left</li>
-                    <li>press up to thrust</li>
-                    <li>press spacebar to destroy asteroids</li>
+                    <li>Press right to turn the nose of the ship right</li>
+                    <li>Press left to turn the nose of the ship left</li>
+                    <li>Press up to thrust</li>
+                    <li>Press spacebar to destroy asteroids</li>
                 </ol>
+				Destroy as many asteroids as you can to level up and get more points; the smaller the asteroids, the more the points. If an asteroid hits your ship, you lose a life. The game is over when you have no lives left.
             </h4>
         </div>
     </div>
@@ -84,11 +86,37 @@ var audio = new Audio("asteroid coming close.mp3");
 <div class="container features">
     <div class="row">
         <div class="col">
-            <h3 class="feature-title">Game Console</h3>
+            <h3 class="feature-title">Play Asteroids!</h3>
             <canvas id="gameCanvas" width="1100" height="570"></canvas>
             <script src="asteroids.js"></script>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante
-                luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<!-- IMG/RESEARCH SOURCES FOR THIS PAGE
+instructions:
+where it says <li>.... this is all text, so put the name of img like "background image" or "anxiety image/research" and then put the link according to the format in the first list item
+	-->
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title"></h3>
+            <h3 class="feature-title">Sources</h3>
+            <p>
+            <ol>
+                <li><strong>
+                    <a href="https://aminoapps.com/c/art/page/blog/arcade-background/8phm_u8VRm1Q4eYPwGjqVKPzvqzVnJ">Header Image</a>
+                </strong></li>
+                <li><strong>
+                    <a href="https://www.pinterest.com/pin/635570566164751717/">Background Image</a>
+                </strong></li>
+
+				<li><strong>
+                    <a href="https://www.youtube.com/watch?v=H9CSWMxJx84">Asteroids Code</a>
+                </strong></li>
+            </ol>
+            </p>
         </div>
     </div>
 </div>
@@ -97,17 +125,11 @@ var audio = new Audio("asteroid coming close.mp3");
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">High Tech Hacks Project by Tanush, Shruthi, and Preeti</h6>
-
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                
-
-            </div>
-            <div>
-                <div class="footer-copyright text-center"></div>
-
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h4 class="text-uppercase font-weight-bold">This project was created for High Tech Hacks 2021. <br>
+					Team Members: Preeti, Shruthi, and Tanush.</h4>
+        </div>
+    </div>
 </footer>
 
 </body>

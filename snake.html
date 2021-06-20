@@ -10,6 +10,7 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" href="aa-favicon.ico">
 </head>
 
 <body>
@@ -29,10 +30,10 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="asteroids.html">Asteroids</a>
+                <a class="nav-link" href="puzzle.html">Puzzle</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="puzzle.html">Puzzle</a>
+                <a class="nav-link" href="asteroids.html">Asteroids</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="snake.html">Snake</a>
@@ -49,7 +50,8 @@
     <div class="overlay"></div>
     <div class="description">
         <img src="https://cdn.discordapp.com/attachments/825412073063448599/855898270547050526/unknown-removebg-preview_1.png"
-             height="120" width="530"/>
+             height="120" width="530"/><h5><strong>Games for those who are visually impaired or have anxiety!<br>This
+        project was created for High Tech Hacks 2021.</strong></h6>
     </div>
 </header>
 
@@ -60,223 +62,92 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
 <script src="main.js"></script>
+<script
+        (
+"keydown", function(e) {
+// space and arrow keys
+if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+e.preventDefault();
+}
+}, false);></script>
+
+
+<!--css styling MAY NOT NEED-->
+<style>
+        .game-box {
+            text-align:center;   
+        }
+        .game-info {
+            text-align:center; 
+            font-family:monospace;
+            line-height:24px;
+        }
+    
+
+</style>
 
 <!-- the game and how to play-->
 <div class="container features">
     <div class="row">
         <div class="col">
             <h3 class="feature-title">How to Play</h3>
+            <h4>
+                <ol>
+                    <li>Use the arrow keys to move the snake</li>
+                    <li>Press the spacebar to pause/resume the game</li>
+                </ol>
+                Collect as many apples(red blocks) with your snake(green blocks) as you can by navigating towards it. When the game is over, reload the page to play again.
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title">Play Snake!</h3>
+            <div class="game-box">
+                <canvas id="canvas" width="1100" height="570"></canvas>
+            </div>
+            <script src="snake.js"></script>
+            <p id="game-status"></p>
+            <p id="game-score"></p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<!-- IMG/RESEARCH SOURCES FOR THIS PAGE
+instructions:
+where it says <li>.... this is all text, so put the name of img like "background image" or "anxiety image/research" and then put the link according to the format in the first list item
+	-->
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title"></h3>
+            <h3 class="feature-title">Sources</h3>
             <p>
             <ol>
-                <li>Capture the apples with your snake once </li>
-                </li>your out reload the page to play again</li>
+                <li><strong>
+                    <a href="https://aminoapps.com/c/art/page/blog/arcade-background/8phm_u8VRm1Q4eYPwGjqVKPzvqzVnJ">Header Image</a>
+                </strong></li>
+                <li><strong>
+                    <a href="https://www.pinterest.com/pin/635570566164751717/">Background Image</a>
+                </strong></li>
             </ol>
             </p>
         </div>
     </div>
 </div>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-    <style>
-        .game-box {
-            text-align:center;   
-        }
-        .game-info {
-            text-align:center; 
-            font-family:arial;
-            line-height:24px;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="game-box"><canvas id="canvas" width="400" height="400"></canvas></div>
-    <div class="game-info">
-        <h2>Snake Game</h2>
-        <p id="game-status"></p>
-        <p id="game-score"></p>
-    </div>
-
-    <script>
-      var canvas, ctx, gameControl, gameActive;
-      // render X times per second
-      var x = 8;
-      
-      const CANVAS_BORDER_COLOUR = 'black';
-      const CANVAS_BACKGROUND_COLOUR = "white";
-      const SNAKE_COLOUR = 'lightgreen';
-      const SNAKE_BORDER_COLOUR = 'darkgreen';
-
-
-      window.onload = function() {
-        canvas = document.getElementById("canvas");
-        ctx = canvas.getContext("2d");
-
-        document.addEventListener("keydown", keyDownEvent);
-
-        gameControl = startGame(x);
-      };
-      
-      /* function to start the game */
-      function startGame(x) {
-          // setting gameActive flag to true
-          gameActive = true;
-          document.getElementById("game-status").innerHTML = "<small>Game Started</small>";
-          document.getElementById("game-score").innerHTML = "";
-          return setInterval(draw, 1000 / x);
-      }
-      
-      function pauseGame() {
-          // setting gameActive flag to false
-          clearInterval(gameControl);
-          gameActive = false;
-          document.getElementById("game-status").innerHTML = "<small>Game Paused</small>";
-      }
-      
-      function endGame(x) {
-          // setting gameActive flag to false
-          clearInterval(gameControl);
-          gameActive = false;
-          document.getElementById("game-status").innerHTML = "<small>Game Over</small>";
-          document.getElementById("game-score").innerHTML = "<h1>Score: " + x + "</h1>";
-      }
-
-      // game world
-      var gridSize = (tileSize = 20); // 20 x 20 = 400
-      var nextX = (nextY = 0);
-
-      // snake
-      var defaultTailSize = 3;
-      var tailSize = defaultTailSize;
-      var snakeTrail = [];
-      var snakeX = (snakeY = 10);
-
-      // apple
-      var appleX = (appleY = 15);
-
-      // draw
-      function draw() {
-        // move snake in next pos
-        snakeX += nextX;
-        snakeY += nextY;
-
-        // snake over game world?
-        if (snakeX < 0) {
-          snakeX = gridSize - 1;
-        }
-        if (snakeX > gridSize - 1) {
-          snakeX = 0;
-        }
-
-        if (snakeY < 0) {
-          snakeY = gridSize - 1;
-        }
-        if (snakeY > gridSize - 1) {
-          snakeY = 0;
-        }
-
-        //snake bite apple?
-        if (snakeX == appleX && snakeY == appleY) {
-          tailSize++;
-
-          appleX = Math.floor(Math.random() * gridSize);
-          appleY = Math.floor(Math.random() * gridSize);
-        }
-
-        //  Select the colour to fill the canvas
-      ctx.fillStyle = CANVAS_BACKGROUND_COLOUR;
-      //  Select the colour for the border of the canvas
-      ctx.strokestyle = CANVAS_BORDER_COLOUR;
-
-      // Draw a "filled" rectangle to cover the entire canvas
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      // Draw a "border" around the entire canvas
-      ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-        // paint snake
-        ctx.fillStyle = SNAKE_COLOUR;
-        ctx.strokestyle = SNAKE_BORDER_COLOUR;
-        for (var i = 0; i < snakeTrail.length; i++) {
-          ctx.fillRect(
-            snakeTrail[i].x * tileSize,
-            snakeTrail[i].y * tileSize,
-            tileSize,
-            tileSize
-          );
-          
-          ctx.strokeRect(snakeTrail[i].x * tileSize , snakeTrail[i].y* tileSize, tileSize, tileSize);
-
-          //snake bites it's tail?
-          if (snakeTrail[i].x == snakeX && snakeTrail[i].y == snakeY) {
-            if(tailSize > 3) {
-                endGame(tailSize);
-            }
-            tailSize = defaultTailSize;  
-          }
-        }
-
-        // paint apple
-        ctx.fillStyle = "red";
-        ctx.fillRect(appleX * tileSize, appleY * tileSize, tileSize, tileSize);
-
-        //set snake trail
-        snakeTrail.push({ x: snakeX, y: snakeY });
-        while (snakeTrail.length > tailSize) {
-          snakeTrail.shift();
-        }
-      }
-
-      // input
-      function keyDownEvent(e) {
-        switch (e.keyCode) {
-          case 37:
-            nextX = -1;
-            nextY = 0;
-            break;
-          case 38:
-            nextX = 0;
-            nextY = -1;
-            break;
-          case 39:
-            nextX = 1;
-            nextY = 0;
-            break;
-          case 40:
-            nextX = 0;
-            nextY = 1;
-            break;
-          case 32:
-            if(gameActive == true) {
-                pauseGame();
-            }
-            else {
-                gameControl = startGame(x);
-            }
-            break;
-        }
-      }
-    </script>
-  </body>
-</html>
-
 <!-- footer, with all of our information -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">HighTechHacks Project by Tanush, Shruthi, and Preeti</h6>
-
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h4 class="text-uppercase font-weight-bold">This project was created for High Tech Hacks 2021. <br>
+                    Team Members: Preeti, Shruthi, and Tanush.</h4>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">Something in footer</h6>
-
-            </div>
-            <div>
-                <div class="footer-copyright text-center"></div>
-
+        </div>
 </footer>
 
 </body>
