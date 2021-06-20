@@ -53,7 +53,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(https://cdn.discordapp.com/attachments/825420095353389126/856008445459431434/unknown.png);
+    background-image: url(https://cdn.discordapp.com/attachments/816860235209637921/856053913450840064/unknown.png);
 }
 
 .navbar {
@@ -115,6 +115,7 @@ body {
     color: #cc0e3e;
     font-size: 1.3rem;
     line-height: 1.5;
+    font-family: monospace;
 }
 
 /*.description button {

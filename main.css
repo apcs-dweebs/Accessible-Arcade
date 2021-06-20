@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(https://cdn.discordapp.com/attachments/825420095353389126/856008445459431434/unknown.png);
+    background-image: url(https://cdn.discordapp.com/attachments/816860235209637921/856053913450840064/unknown.png);
 }
 
 .navbar {
@@ -67,20 +67,6 @@ body {
     line-height: 1.5;
 }
 
-/*.description button {
-    border:1px solid #cc0e3e;
-    background:#cc0e3e;
-    border-radius: 0;
-    color:#fff;
-}
-
-.description button:hover {
-    border:1px solid #fff;
-    background:#fff;
-    color:#fff;
-}
-*/
-
 .features {
     margin: 4em auto;
     padding: 1em;
@@ -104,23 +90,6 @@ body {
     -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     margin-bottom: 16px;
-}
-
-.features .form-control,
-.features input {
-    border-radius: 0;
-}
-
-.features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
-    color: #fff;
-    margin-top: 20px;
-}
-
-.features .btn:hover {
-    background-color: #333;
-    border: 1px solid #333;
 }
 
 .background {
@@ -155,6 +124,7 @@ body {
     background-color: #cc0e3e;
     color: #fff;
     font-family: monospace;
+	font-size: 20px;
     padding: 60px 0 30px;
 }
 
