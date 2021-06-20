@@ -79,36 +79,360 @@
   padding: 5px;
   border: 1px solid white;
 }
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 
-<!-- the game and how to play-->
+<!--blue pacman-->
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title">   </h3>
+			<h3 class="feature-title">How to Play</h3>
+            <p>
+            <ol>
+                <li><strong>Arrange the pieces to look like a complete picture</strong></li>
+               
+            </ol>
+            </p>
+        </div>
+
+		<div class="col">
+            <h3 class="feature-title">   </h3>
+			<h3 class="feature-title">Final Image</h3>
+            <img src="https://media.discordapp.net/attachments/825412073063448599/855884873272262696/Screen_Shot_2021-06-19_at_2.45.19_PM-removebg-preview_2.png"
+     alt="puzzle piece" height="400" width="400"/> <!-- 8.4 inches -->
+        </div>
+    </div>
+</div>
+
+<div class="container features">
+    <div class="row row-cols-6">
+        <div class="col-sm-n1">
+
+
+            <div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <!-- <p>Description if needed.</p>-->
+        <div class="col-sm-n1">
+
+
+            <div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col-sm-n1">
+            <div id="d7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+        <div class="col-sm-n1">
+            <div id="p76" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p67" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p45" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <script src="puzzle.js"></script>
+            <!--2-->
+            <div id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://media.discordapp.net/attachments/825412073063448599/855931313704665128/Screen_Shot_2021-06-19_at_6.05.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="180">
+            </div>
+            <!--6-->
+            <div id="p2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931495485931520/Screen_Shot_2021-06-19_at_6.05.48_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag2" width="180" height="180">
+            </div>
+            <!--3-->
+            <div id="p3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931614705483786/Screen_Shot_2021-06-19_at_6.06.29_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag3" width="180" height="180">
+            </div>
+			  <!--4-->
+            <div id="p8" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932450386214912/Screen_Shot_2021-06-19_at_6.09.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag8" width="180" height="180">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <!--9-->
+            <div id="p4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931715649142795/Screen_Shot_2021-06-19_at_6.06.51_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag4" width="180" height="180">
+            </div>
+            <!--5-->
+            <div id="p5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932071682768917/Screen_Shot_2021-06-19_at_6.07.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag5" width="180" height="180">
+            </div>
+            <!--8-->
+            <div id="p6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932212490928158/Screen_Shot_2021-06-19_at_6.08.45_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag6" width="180" height="180">
+            </div>
+
+            <!--7-->
+            <div id="p7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855932337241718824/Screen_Shot_2021-06-19_at_6.09.15_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag7" width="180" height="180">
+            </div>
+          
+            <!--1-->
+            <div id="p9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932555772690442/Screen_Shot_2021-06-19_at_6.10.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag9" width="180" height="180">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--blue arcade(LINKS)-->
 <div class="container features">
     <div class="row">
         <div class="col">
             <h3 class="feature-title">How to Play</h3>
             <p>
             <ol>
-                <li>Arrange the pieces  </li>
-                <li>to look like the<li> 
-               <li> refrence picture<li>
+                <li><strong>Arrange the pieces to look like a complete picture</strong></li>
+               
             </ol>
             </p>
+        </div>
+
+		<div class="col">
+            <h3 class="feature-title">Final Image</h3>
+            <img src="https://media.discordapp.net/attachments/855950571059281920/856016618085941248/Screen_Shot_2021-06-19_at_3.26.04_PM-removebg-preview_1.png"
+     alt="puzzle piece" height="400" width="400"/> <!-- 8.4 inches -->
         </div>
     </div>
 </div>
 
+<div class="container features">
+    <div class="row row-cols-6">
+        <div class="col-sm-n1">
+
+
+            <div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <!-- <p>Description if needed.</p>-->
+        <div class="col-sm-n1">
+
+
+            <div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col-sm-n1">
+            <div id="d7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+        <div class="col-sm-n1">
+            <div id="p76" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p67" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p45" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <script src="puzzle.js"></script>
+            <!--2-->
+            <div id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://media.discordapp.net/attachments/825412073063448599/855931313704665128/Screen_Shot_2021-06-19_at_6.05.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="180">
+            </div>
+            <!--6-->
+            <div id="p2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931495485931520/Screen_Shot_2021-06-19_at_6.05.48_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag2" width="180" height="180">
+            </div>
+            <!--3-->
+            <div id="p3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931614705483786/Screen_Shot_2021-06-19_at_6.06.29_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag3" width="180" height="180">
+            </div>
+			  <!--4-->
+            <div id="p8" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932450386214912/Screen_Shot_2021-06-19_at_6.09.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag8" width="180" height="180">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <!--9-->
+            <div id="p4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931715649142795/Screen_Shot_2021-06-19_at_6.06.51_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag4" width="180" height="180">
+            </div>
+            <!--5-->
+            <div id="p5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932071682768917/Screen_Shot_2021-06-19_at_6.07.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag5" width="180" height="180">
+            </div>
+            <!--8-->
+            <div id="p6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932212490928158/Screen_Shot_2021-06-19_at_6.08.45_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag6" width="180" height="180">
+            </div>
+
+            <!--7-->
+            <div id="p7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855932337241718824/Screen_Shot_2021-06-19_at_6.09.15_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag7" width="180" height="180">
+            </div>
+          
+            <!--1-->
+            <div id="p9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932555772690442/Screen_Shot_2021-06-19_at_6.10.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag9" width="180" height="180">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--RED pacman(LINKS)-->
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title">How to Play</h3>
+            <p>
+            <ol>
+                <li><strong>Arrange the pieces to look like a complete picture</strong></li>
+               
+            </ol>
+            </p>
+        </div>
+
+		<div class="col">
+            <h3 class="feature-title">Final Image</h3>
+            <img src="https://media.discordapp.net/attachments/825412073063448599/855884873272262696/Screen_Shot_2021-06-19_at_2.45.19_PM-removebg-preview_2.png"
+     alt="puzzle piece" height="400" width="400"/> <!-- 8.4 inches -->
+        </div>
+    </div>
+</div>
+
+<div class="container features">
+    <div class="row row-cols-6">
+        <div class="col-sm-n1">
+
+
+            <div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <!-- <p>Description if needed.</p>-->
+        <div class="col-sm-n1">
+
+
+            <div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col-sm-n1">
+            <div id="d7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+        <div class="col-sm-n1">
+            <div id="p76" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p67" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p45" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <script src="puzzle.js"></script>
+            <!--2-->
+            <div id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://media.discordapp.net/attachments/825412073063448599/855931313704665128/Screen_Shot_2021-06-19_at_6.05.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="180">
+            </div>
+            <!--6-->
+            <div id="p2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931495485931520/Screen_Shot_2021-06-19_at_6.05.48_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag2" width="180" height="180">
+            </div>
+            <!--3-->
+            <div id="p3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931614705483786/Screen_Shot_2021-06-19_at_6.06.29_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag3" width="180" height="180">
+            </div>
+			  <!--4-->
+            <div id="p8" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932450386214912/Screen_Shot_2021-06-19_at_6.09.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag8" width="180" height="180">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <!--9-->
+            <div id="p4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931715649142795/Screen_Shot_2021-06-19_at_6.06.51_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag4" width="180" height="180">
+            </div>
+            <!--5-->
+            <div id="p5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932071682768917/Screen_Shot_2021-06-19_at_6.07.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag5" width="180" height="180">
+            </div>
+            <!--8-->
+            <div id="p6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932212490928158/Screen_Shot_2021-06-19_at_6.08.45_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag6" width="180" height="180">
+            </div>
+
+            <!--7-->
+            <div id="p7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855932337241718824/Screen_Shot_2021-06-19_at_6.09.15_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag7" width="180" height="180">
+            </div>
+          
+            <!--1-->
+            <div id="p9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932555772690442/Screen_Shot_2021-06-19_at_6.10.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag9" width="180" height="180">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--RED ARCADE(LINKS)-->
+<div class="container features">
+    <div class="row">
+        <div class="col">
+            <h3 class="feature-title">How to Play</h3>
+            <p>
+            <ol>
+                <li><strong>Arrange the pieces to look like a complete picture</strong></li>
+               
+            </ol>
+            </p>
+        </div>
+
+		<div class="col">
+            <h3 class="feature-title">Final Image</h3>
+            <img src="https://media.discordapp.net/attachments/825412073063448599/855884873272262696/Screen_Shot_2021-06-19_at_2.45.19_PM-removebg-preview_2.png"
+     alt="puzzle piece" height="400" width="400"/> <!-- 8.4 inches -->
+        </div>
+    </div>
+</div>
 
 <div class="container features">
     <div class="row row-cols-6">
