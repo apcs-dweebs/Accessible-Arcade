@@ -82,8 +82,8 @@ body {
 */
 
 .features {
-    margin: 4em auto;
-    padding: 1em;
+    margin: 1;
+    padding: 10;
     position: relative;
     color: #fff;
     font-family:monospace;
@@ -108,7 +108,7 @@ body {
 
 .features .form-control,
 .features input {
-    border-radius: 0;
+    border-radius: 3;
 }
 
 .features .btn {
@@ -130,13 +130,13 @@ body {
 
 .team {
     color: #fff;
-    padding: 0 180px;
+    padding: 0 2em;
 }
 
 .team .card-columns {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+    -webkit-column-count: 7;
+    -moz-column-count: 7;
+    column-count: 7;
 }
 
 .team .card {
@@ -187,80 +187,3 @@ body {
     }
 
 }
-/* a modal, we're not using rn
-#demo-modal .modal-content {
-    border-radius: 0;
-    padding: 2rem;
-}
-
-#demo-modal .modal-header {
-    border-bottom: none;
-}
-
-#demo-modal h4 {
-    color: #000;
-    font-size: 30px;
-    margin: 0 0 25px;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-#demo-modal .close {
-    background: #c0c3c8;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 19px;
-    font-weight: normal;
-    height: 30px;
-    opacity: 0.5;
-    padding: 0;
-    position: absolute;
-    right: 26px;
-    text-align: center;
-    top: 26px;
-    width: 30px;
-}
-
-#demo-modal .close span {
-    position: relative;
-    top: -3px;
-}
-
-#demo-modal .modal-body p {
-    color: #fff;
-}
-
-#demo-modal .form-control,
-#demo-modal .btn {
-    min-height: 46px;
-}
-#demo-modal .btn {
-    background-color: #1da098;
-    border: none;
-    color: #fff;
-    min-width: 150px;
-    transition: all 0.4s;
-}
-
-#demo-modal .btn:hover,
-#demo-modal .btn:focus {
-    background-color: #12968d;
-}
-*/
-
-/* a video player, we're not using rn
-.iframe-container{
-position: relative;
-width: 100%;
-padding-bottom: 56.25%;
-height:0;
-}
-
-.iframe-container iframe{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-}
-*/
