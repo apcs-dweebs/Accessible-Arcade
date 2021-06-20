@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="puzzle.css">
 </head>
 
 <body>
@@ -18,7 +18,6 @@
     <a class="navbar-brand" href="#">
         <img width="320" height="40"
              src="https://cdn.discordapp.com/attachments/825412073063448599/855892737802895360/unknown-removebg-preview.png">
-
     </a>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,6 +60,39 @@
         crossorigin="anonymous"></script>
 <script src="main.js"></script>
 
+<!-- css styling cus im lazy-->
+<style>
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9  {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9  {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
 <!-- the game and how to play-->
 <div class="container features">
     <div class="row">
@@ -68,79 +100,118 @@
             <h3 class="feature-title">How to Play</h3>
             <p>
             <ol>
-                <li>play games</li>
+                <li>Arrange the pieces  </li>
+                <li>to look like the<li> 
+               <li> refrence picture<li>
             </ol>
             </p>
         </div>
     </div>
 </div>
 
-<div class="container features">
-    <div class="row">
-        <div class="col">
-            <h3 class="feature-title">Game Console</h3>
 
-            <p>Description if needed.</p>
+<div class="container features">
+    <div class="row row-cols-6">
+        <div class="col-sm-n1">
+
+
+            <div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <!-- <p>Description if needed.</p>-->
+        <div class="col-sm-n1">
+
+
+            <div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col-sm-n1">
+            <div id="d7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="d9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+        <div class="col-sm-n1">
+            <div id="p76" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p67" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+            <div id="p45" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <script src="puzzle.js"></script>
+            <!--2-->
+            <div id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://media.discordapp.net/attachments/825412073063448599/855931313704665128/Screen_Shot_2021-06-19_at_6.05.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="180">
+            </div>
+            <!--6-->
+            <div id="p2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931495485931520/Screen_Shot_2021-06-19_at_6.05.48_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag2" width="180" height="180">
+            </div>
+            <!--3-->
+            <div id="p3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931614705483786/Screen_Shot_2021-06-19_at_6.06.29_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag3" width="180" height="180">
+            </div>
+			  <!--4-->
+            <div id="p8" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932450386214912/Screen_Shot_2021-06-19_at_6.09.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag8" width="180" height="180">
+            </div>
+        </div>
+        <div class="col-sm-n1">
+            <!--9-->
+            <div id="p4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855931715649142795/Screen_Shot_2021-06-19_at_6.06.51_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag4" width="180" height="180">
+            </div>
+            <!--5-->
+            <div id="p5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932071682768917/Screen_Shot_2021-06-19_at_6.07.43_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag5" width="180" height="180">
+            </div>
+            <!--8-->
+            <div id="p6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932212490928158/Screen_Shot_2021-06-19_at_6.08.45_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag6" width="180" height="180">
+            </div>
+
+            <!--7-->
+            <div id="p7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src=" https://media.discordapp.net/attachments/825412073063448599/855932337241718824/Screen_Shot_2021-06-19_at_6.09.15_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag7" width="180" height="180">
+            </div>
+          
+            <!--1-->
+            <div id="p9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="  https://media.discordapp.net/attachments/825412073063448599/855932555772690442/Screen_Shot_2021-06-19_at_6.10.10_PM.png"
+                     draggable="true" ondragstart="drag(event)" id="drag9" width="180" height="180">
+            </div>
         </div>
     </div>
 </div>
-
-<!-- puzzle piece images-->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855884873272262696/Screen_Shot_2021-06-19_at_2.45.19_PM-removebg-preview_2.png"
-     alt="puzzle piece" height="815" width="815"/> <!-- 8.4 inches -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855931313704665128/Screen_Shot_2021-06-19_at_6.05.10_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 2 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855931495485931520/Screen_Shot_2021-06-19_at_6.05.48_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 6 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855931614705483786/Screen_Shot_2021-06-19_at_6.06.29_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 3 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855931715649142795/Screen_Shot_2021-06-19_at_6.06.51_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 9 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855932071682768917/Screen_Shot_2021-06-19_at_6.07.43_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 5 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855932212490928158/Screen_Shot_2021-06-19_at_6.08.45_PM.png"
-     alt="puzzle piece" height="217" width="217"/>  <!-- Image 8 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855932337241718824/Screen_Shot_2021-06-19_at_6.09.15_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 7 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855932450386214912/Screen_Shot_2021-06-19_at_6.09.43_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 4 -->
-<img src="https://media.discordapp.net/attachments/825412073063448599/855932555772690442/Screen_Shot_2021-06-19_at_6.10.10_PM.png"
-     alt="puzzle piece" height="217" width="217"/> <!-- Image 1 -->
-
-
-
-     
-<img 
-src="https://media.discordapp.net/attachments/825412073063448599/855891852804489216/Screen_Shot_2021-06-19_at_3.26.04_PM-removebg-preview.png"
-     alt="puzzle piece" height="990" width="990"/> <!-- 10.2 inches -->
-
-
-
-
-
-<img src="https://media.discordapp.net/attachments/825412073063448599/855894469931958322/Screen_Shot_2021-06-19_at_3.36.17_PM-removebg-preview.png"
-     alt="puzzle piece" height="845" width="845"/> <!-- 8.7 inches -->
-
-
-
-
-<img src="https://media.discordapp.net/attachments/825412073063448599/855896467889192966/Screen_Shot_2021-06-19_at_3.41.03_PM-removebg-preview.png"
-     alt="puzzle piece" height="900" width="900"/> <!-- 9.3 inches -->
 
 <!-- footer, with all of our information -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <h6 class="text-uppercase font-weight-bold">High Tech Hacks Project by Tanush, Shruthi, and Preeti</h6>
 
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <h6 class="text-uppercase font-weight-bold">Something in footer</h6>
 
             </div>
-            <div>
-                <div class="footer-copyright text-center"></div>
+
+            <div class="footer-copyright text-center"></div>
 
 </footer>
 

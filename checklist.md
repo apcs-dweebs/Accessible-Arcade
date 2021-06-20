@@ -26,7 +26,7 @@ zen
 	*add how to use
 
 design
-	*logo
+	
 
 misc
 	*footer
