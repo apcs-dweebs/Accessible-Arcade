@@ -1,5 +1,5 @@
 # Accessible-Arcade
-This website is available [here](https://accessible-arcade.preetit17.repl.co/index.html}. 
+This website is available [here](https://accessible-arcade.preetit17.repl.co/index.html). 
 
 The repl.it code is available [here](https://replit.com/@preetit17/Accessible-Arcade).
 
